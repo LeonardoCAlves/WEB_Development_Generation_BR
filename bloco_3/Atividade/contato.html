@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebony Arts</title>
+    <link rel="stylesheet" href="assets/css/stylecontato.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ebony Arts</h1>
+        <ul>
+            <li>
+                <a href="index.html">Página Inicial</a>
+            </li>
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
+        </ul>
+    </header>
+
+    <hr>
+
+    <h2 class="titulo">Dá o papo!</h2>
+
+    <div class="container">
+        <div class="form">
+            <form>
+                <div class="inputbox">
+                    <input type="text" id="nome" placeholder="Digite seu nome:" onkeyup="validaNome()">
+                </div>
+                <div id="txtNome"></div>
+
+                <div class="inputbox">                  
+                    <input type="text" id="email" placeholder="Digite seu melhor email:" onkeyup="validaEmail()">
+                </div>
+                <div id="txtEmail"></div>
+
+                <div class="inputbox">
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="5" placeholder="Deixe aqui sua mensagem!" onkeyup="validaMensagem()"></textarea>
+                </div>
+                <div id="txtMensagem"></div>
+
+                <div class="btn">
+                    <button id="btn" onclick="enviar()">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.771023206719!2d-46.60641598502194!3d-23.57666588467525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5be2bdf66443%3A0xfe50160039acb3c!2sR.%20Tabor%2C%20647%20-%20Ipiranga%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004202-021!5e0!3m2!1spt-BR!2sbr!4v1663935291928!5m2!1spt-BR!2sbr" 
+            width="400" height="250" style="border:0;" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()">
+            </iframe>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="footer-content">
+            <a href="https://www.linkedin.com/in/leonardo-alves-7b5aa5152/" target="blank">
+                Todos os direitos reservados à <strong>Ebony</strong> S<span>y</span>S™ 20<span>22</span>
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
